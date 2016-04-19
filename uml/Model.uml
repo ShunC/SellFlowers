@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.cs.Model</OriginalElement>
+  <nodes>
+    <node x="67.25" y="0.0">org.cs.Model.Flowers</node>
+    <node x="56.75" y="392.0">org.cs.Model.BuyFlowers</node>
+    <node x="0.0" y="196.0">org.cs.Model.SellFlowers</node>
+    <node x="55.75" y="588.0">org.cs.Model.User</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.cs.Model.BuyFlowers" target="org.cs.Model.SellFlowers">
+      <point x="-52.25" y="-73.0" />
+      <point x="109.0" y="367.0" />
+      <point x="104.0" y="367.0" />
+      <point x="0.0" y="73.0" />
+    </edge>
+    <edge source="org.cs.Model.User" target="org.cs.Model.BuyFlowers">
+      <point x="0.0" y="-96.0" />
+      <point x="0.0" y="73.0" />
+    </edge>
+    <edge source="org.cs.Model.BuyFlowers" target="org.cs.Model.Flowers">
+      <point x="52.25" y="-73.0" />
+      <point x="213.5" y="367.0" />
+      <point x="218.5" y="367.0" />
+      <point x="218.5" y="171.0" />
+      <point x="208.25" y="171.0" />
+      <point x="47.0" y="73.0" />
+    </edge>
+    <edge source="org.cs.Model.SellFlowers" target="org.cs.Model.Flowers">
+      <point x="0.0" y="-73.0" />
+      <point x="104.0" y="171.0" />
+      <point x="114.25" y="171.0" />
+      <point x="-47.0" y="73.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.69875" x="133.5" y="390.0" />
+  <SelectedNodes>
+    <node>org.cs.Model.Flowers</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Inner Classes</Category>
+    <Category>Properties</Category>
+    <Category>Methods</Category>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

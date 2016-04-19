@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.cs</OriginalElement>
+  <nodes>
+    <node x="269.99583333333334" y="80.0">org.cs.Model</node>
+    <node x="0.0" y="255.0">org.cs.Until</node>
+    <node x="0.0" y="0.0">org.cs.Exception</node>
+    <node x="156.0" y="255.0">org.cs.Test</node>
+    <node x="267.58333333333337" y="180.0">org.cs.Action</node>
+    <node x="161.0" y="0.0">org.cs.Dao</node>
+    <node x="93.99583333333335" y="80.0">org.cs.Service</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.cs.Action" target="org.cs.Service">
+      <point x="-40.33333333333337" y="-15.0" />
+      <point x="287.75" y="160.0" />
+      <point x="156.99583333333334" y="160.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="org.cs.Model" target="org.cs.Model">
+      <point x="-46.125" y="15.0" />
+      <point x="285.37083333333334" y="130.0" />
+      <point x="249.99583333333334" y="130.0" />
+      <point x="249.99583333333334" y="102.5" />
+      <point x="-61.5" y="7.5" />
+    </edge>
+    <edge source="org.cs.Service" target="org.cs.Exception">
+      <point x="-31.5" y="-15.0" />
+      <point x="125.49583333333335" y="55.0" />
+      <point x="70.5" y="55.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="org.cs.Service" target="org.cs.Dao">
+      <point x="31.5" y="-15.0" />
+      <point x="188.49583333333334" y="55.0" />
+      <point x="215.5" y="55.0" />
+      <point x="0.0" y="15.0" />
+    </edge>
+    <edge source="org.cs.Action" target="org.cs.Model">
+      <point x="0.0" y="-15.0" />
+      <point x="328.08333333333337" y="160.0" />
+      <point x="346.87083333333334" y="160.0" />
+      <point x="15.375" y="15.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.4000000000000004" x="196.49999999999997" y="142.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Inner Classes</Category>
+    <Category>Properties</Category>
+    <Category>Methods</Category>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

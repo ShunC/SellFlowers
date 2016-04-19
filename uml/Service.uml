@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.cs.Service</OriginalElement>
+  <nodes>
+    <node x="409.625" y="195.0">org.cs.Service.BaseService</node>
+    <node x="0.0" y="265.0">org.cs.Service.I_FlowersService</node>
+    <node x="242.625" y="265.0">org.cs.Service.I_BuyFlowersService</node>
+    <node x="521.625" y="0.0">org.cs.Service.I_BaseService</node>
+    <node x="852.625" y="265.0">org.cs.Service.I_SellFlowersService</node>
+    <node x="960.75" y="438.0">org.cs.Service.UserService</node>
+    <node x="1060.75" y="230.5">org.cs.Service.I_UserService</node>
+    <node x="683.7375" y="472.5">org.cs.Service.SellFlowersService</node>
+    <node x="40.0" y="676.0">org.cs.Service.I_OrderService</node>
+    <node x="325.61249999999995" y="472.5">org.cs.Service.BuyFlowersService</node>
+    <node x="0.0" y="848.0">org.cs.Service.OrderService</node>
+    <node x="49.25" y="472.5">org.cs.Service.FlowersService</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="org.cs.Service.UserService" target="org.cs.Service.BaseService">
+      <point x="-63.0" y="-96.5" />
+      <point x="1023.75" y="408.0" />
+      <point x="779.75" y="408.0" />
+      <point x="158.625" y="96.5" />
+    </edge>
+    <edge source="org.cs.Service.BaseService" target="org.cs.Service.I_BaseService">
+      <point x="0.0" y="-96.5" />
+      <point x="0.0" y="72.5" />
+    </edge>
+    <edge source="org.cs.Service.BuyFlowersService" target="org.cs.Service.I_BuyFlowersService">
+      <point x="-57.5" y="-62.0" />
+      <point x="383.11249999999995" y="408.0" />
+      <point x="316.125" y="408.0" />
+      <point x="0.0" y="26.5" />
+    </edge>
+    <edge source="org.cs.Service.I_FlowersService" target="org.cs.Service.I_BaseService">
+      <point x="0.0" y="-26.5" />
+      <point x="101.5" y="165.0" />
+      <point x="541.525" y="165.0" />
+      <point x="-79.60000000000002" y="72.5" />
+    </edge>
+    <edge source="org.cs.Service.BuyFlowersService" target="org.cs.Service.BaseService">
+      <point x="57.5" y="-62.0" />
+      <point x="498.11249999999995" y="418.0" />
+      <point x="568.25" y="418.0" />
+      <point x="-52.875" y="96.5" />
+    </edge>
+    <edge source="org.cs.Service.SellFlowersService" target="org.cs.Service.I_SellFlowersService">
+      <point x="57.25" y="-62.0" />
+      <point x="855.4875" y="418.0" />
+      <point x="925.625" y="418.0" />
+      <point x="0.0" y="26.5" />
+    </edge>
+    <edge source="org.cs.Service.FlowersService" target="org.cs.Service.BaseService">
+      <point x="52.25" y="-62.0" />
+      <point x="206.0" y="418.0" />
+      <point x="462.5" y="418.0" />
+      <point x="-158.625" y="96.5" />
+    </edge>
+    <edge source="org.cs.Service.I_UserService" target="org.cs.Service.I_BaseService">
+      <point x="0.0" y="-61.0" />
+      <point x="1149.75" y="165.0" />
+      <point x="700.725" y="165.0" />
+      <point x="79.60000000000002" y="72.5" />
+    </edge>
+    <edge source="org.cs.Service.SellFlowersService" target="org.cs.Service.BaseService">
+      <point x="-57.25" y="-62.0" />
+      <point x="740.9875" y="418.0" />
+      <point x="674.0" y="418.0" />
+      <point x="52.875" y="96.5" />
+    </edge>
+    <edge source="org.cs.Service.I_SellFlowersService" target="org.cs.Service.I_BaseService">
+      <point x="0.0" y="-26.5" />
+      <point x="925.625" y="175.0" />
+      <point x="660.925" y="175.0" />
+      <point x="39.799999999999955" y="72.5" />
+    </edge>
+    <edge source="org.cs.Service.FlowersService" target="org.cs.Service.I_FlowersService">
+      <point x="-52.25" y="-62.0" />
+      <point x="0.0" y="26.5" />
+    </edge>
+    <edge source="org.cs.Service.OrderService" target="org.cs.Service.I_OrderService">
+      <point x="0.0" y="-107.5" />
+      <point x="0.0" y="61.0" />
+    </edge>
+    <edge source="org.cs.Service.I_BuyFlowersService" target="org.cs.Service.I_BaseService">
+      <point x="0.0" y="-26.5" />
+      <point x="316.125" y="175.0" />
+      <point x="581.325" y="175.0" />
+      <point x="-39.799999999999955" y="72.5" />
+    </edge>
+    <edge source="org.cs.Service.UserService" target="org.cs.Service.I_UserService">
+      <point x="63.0" y="-96.5" />
+      <point x="0.0" y="61.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.5161588180978762" x="619.7567084078713" y="531.5" />
+  <SelectedNodes>
+    <node>org.cs.Service.FlowersService</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Inner Classes</Category>
+    <Category>Properties</Category>
+    <Category>Methods</Category>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

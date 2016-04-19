@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>org.cs.Action</OriginalElement>
+  <nodes>
+    <node x="0.0" y="284.0">org.cs.Action.UserAction</node>
+    <node x="0.0" y="545.0">org.cs.Action.orderAction</node>
+    <node x="388.0" y="0.0">org.cs.Action.FlowersAction</node>
+    <node x="302.0" y="545.0">org.cs.Action.recommendAction</node>
+    <node x="293.0" y="284.0">org.cs.Action.BuyAction</node>
+    <node x="0.0" y="0.0">org.cs.Action.SellAction</node>
+  </nodes>
+  <notes />
+  <edges />
+  <settings layout="Hierarchic Group" zoom="0.7862165963431786" x="345.0" y="345.5" />
+  <SelectedNodes>
+    <node>org.cs.Action.UserAction</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Inner Classes</Category>
+    <Category>Properties</Category>
+    <Category>Methods</Category>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

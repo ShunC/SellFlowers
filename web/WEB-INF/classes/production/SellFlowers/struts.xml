@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+    <!-- 设置 url 后缀-->
+    <constant name="struts.action.extension" value="action,do"/>
+    <!-- 当 struts的配置文件修改后，系统是否自动重新加载该文件，默认值为false（生 产环境下使用），开发阶段最好打开 -->
+    <constant name="struts.configuration.xml.reload" value="true"/>
+    <!-- 表示 Action 由 Spring 依赖注入来注入-->
+    <constant name="struts.objectFactory" value="org.apache.struts2.spring.StrutsSpringObjectFactory"/>
+
+    <!-- xxxAction 使用 struts 配置 -->
+    <package name="default" namespace="/" extends="struts-default">
+        <!--&lt;!&ndash; 配置拦截器 ， 要在 action 配置 后才生效&ndash;&gt;-->
+        <!--<interceptors>-->
+            <!--&lt;!&ndash; 这种 方式 在 action 中需要 配置 defaultStack &ndash;&gt;-->
+            <!--&lt;!&ndash;<interceptor name="HelloInterceptor" class="Interceptor.HelloInterceptor"/>&ndash;&gt;-->
+            <!--&lt;!&ndash; 这种方式 只需要在 action 中 配置 HelloStack &ndash;&gt;-->
+            <!--<interceptor name="HelloInterceptor" class="Interceptor.HelloInterceptor"/>-->
+            <!--<interceptor-stack name="HelloStack">-->
+                <!--<interceptor-ref name="defaultStack"/>-->
+                <!--<interceptor-ref name="HelloInterceptor"/>-->
+            <!--</interceptor-stack>-->
+        <!--</interceptors>-->
+
+        <!-- 全局结果集 -->
+        <global-results>
+            <result name="error">/WEB-INF/Exception/MyException.jsp</result>
+            <result name="exception">/WEB-INF/Exception/MyException.jsp</result>
+        </global-results>
+
+        <!-- 异常抛出 配置-->
+        <global-exception-mappings>
+            <exception-mapping exception="Exception.MyException" result="exception"></exception-mapping>
+        </global-exception-mappings>
+
+        <!-- 基于 通配符 的 方式 , 由于整合了Spring ,class = "应该是Spring所注入的对象"-->
+        <action name="*_*" class="{1}Action" method="{2}">
+            <!-- 拦截器 生效 ，需要有继承 defaultStack -->
+            <!--<interceptor-ref name="HelloInterceptor"/>-->
+            <!--<interceptor-ref name="defaultStack"/>-->
+            <!--<interceptor-ref name="HelloStack"/>-->
+            <result name="success">/WEB-INF/jsp/{1}/{2}.jsp</result>
+            <!-- 重定向 type = "redirect" -->
+            <result type="redirect" name="redirect">/${url}</result>
+        </action>
+
+    </package>
+
+</struts>
